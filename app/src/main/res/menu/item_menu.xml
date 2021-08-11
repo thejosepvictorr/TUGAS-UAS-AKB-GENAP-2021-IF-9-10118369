@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/kota_bandung"
+        android:icon="@drawable/ic_baseline_place_24"
+        android:title="Kota Bandung"/>
+
+    <item
+        android:id="@+id/kabupaten_bandung"
+        android:icon="@drawable/ic_baseline_place_24"
+        android:title="Kabupaten Bandung"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile"/>
+
+    <item
+        android:id="@+id/kabupaten_bandung_barat"
+        android:icon="@drawable/ic_baseline_place_24"
+        android:title="Kabupaten Bandung Barat"/>
+
+    <item
+        android:id="@+id/kota_cimahi"
+        android:icon="@drawable/ic_baseline_place_24"
+        android:title="Kota Cimahi"/>
+
+</menu>

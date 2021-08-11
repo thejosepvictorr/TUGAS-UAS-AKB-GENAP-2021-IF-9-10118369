@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">World of Bandung</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="judul_fragment2">
+        Apa saja yang merupakan bagian dari Greater Bandung ( Bandung Raya ) ?</string>
+    <string name="tvDescSlide3">
+        Aplikasi ini akan membantu kamu dalam menemukan
+        lokasi - lokasi wisata dari daerah - daerah yang sudah
+        disebutkan sebelumnya
+        Penasaran ingin mencoba? Ayo Klik tombol get started sekarang juga !</string>
+    <string name="title_activity_maps_wisata1">Map</string>
+    <string name="title_activity_maps_wisata2">Map</string>
+</resources>

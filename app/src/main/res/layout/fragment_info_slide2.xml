@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fragment_2"
+    tools:context=".info.InfoFragmentSlide2">
+
+    <TextView
+        android:id="@+id/tvPageOfSlide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/white"
+        android:text="Page 2 of 3"/>
+
+    <TextView
+        android:id="@+id/tvTitleSlide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPageOfSlide2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:text="@string/judul_fragment2" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvTitleSlide2">
+
+        <ImageView
+            android:id="@+id/ivKotaBandung"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/tvKotaBandung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivKotaBandung"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_alignLeft="@id/ivKotaBandung"
+            android:layout_alignRight="@id/ivKotaBandung"
+            android:text="Kota \nBandung"/>
+
+        <ImageView
+            android:id="@+id/ivKabBandung"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/ivKotaBandung" />
+
+        <TextView
+            android:id="@+id/tvKabBandung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvKotaBandung"
+            android:layout_below="@id/ivKabBandung"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_alignLeft="@id/ivKabBandung"
+            android:layout_alignRight="@id/ivKabBandung"
+            android:text="Kota \nBandung"/>
+
+        <ImageView
+            android:id="@+id/ivKabBanBar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tvKotaBandung" />
+
+        <TextView
+            android:id="@+id/tvKabBanBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivKabBanBar"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_alignLeft="@id/ivKotaBandung"
+            android:layout_alignRight="@id/ivKotaBandung"
+            android:text="Kabupaten \nBandung Barat"/>
+
+        <ImageView
+            android:id="@+id/ivKotaCimahi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tvKabBandung"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/ivKabBanBar"
+            android:layout_marginLeft="40dp" />
+
+        <TextView
+            android:id="@+id/tvKotaCimahi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvKabBanBar"
+            android:layout_below="@id/ivKotaCimahi"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_alignLeft="@id/ivKabBandung"
+            android:layout_alignRight="@id/ivKabBandung"
+            android:text="Kota \nCimahi"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:text="Swipe >>"/>
+</RelativeLayout>

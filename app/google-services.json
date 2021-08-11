@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "281162464955",
+    "project_id": "world-of-bandung",
+    "storage_bucket": "world-of-bandung.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281162464955:android:d84d40b9e4d2f1aaa9739e",
+        "android_client_info": {
+          "package_name": "com.josepvictorr.tugas_uas_akb_genap_2021_10118369"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281162464955-fos5nmab38m6tb2kl1d86nkj12gkcb1k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUobsY7nXXpbOY0fFtA_kW6jSw4MWsVao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281162464955-fos5nmab38m6tb2kl1d86nkj12gkcb1k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
