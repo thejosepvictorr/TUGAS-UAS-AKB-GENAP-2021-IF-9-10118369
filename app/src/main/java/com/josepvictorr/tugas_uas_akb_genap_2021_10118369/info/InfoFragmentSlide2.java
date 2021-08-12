@@ -14,7 +14,7 @@ import com.bumptech.glide.Glide;
 import com.josepvictorr.tugas_uas_akb_genap_2021_10118369.R;
 
 public class InfoFragmentSlide2 extends Fragment {
-    // 9 Agustus 20201 - 10118369 - Josep Victor Rajaodli - IF 9
+    // 9 Agustus 2021 - 10118369 - Josep Victor Rajadoli - IF 9
     ImageView ivKotaBandung, ivKabBandung, ivKabBanBar, ivKotaCimahi;
 
     @Nullable

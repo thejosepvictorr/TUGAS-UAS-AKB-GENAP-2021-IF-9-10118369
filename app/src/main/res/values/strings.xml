@@ -10,4 +10,6 @@
         Penasaran ingin mencoba? Ayo Klik tombol get started sekarang juga !</string>
     <string name="title_activity_maps_wisata1">Map</string>
     <string name="title_activity_maps_wisata2">Map</string>
+    <string name="title_activity_maps_wisata3">MapsWisata3Activity</string>
+    <string name="title_activity_maps_wisata4">MapsWisata4Activity</string>
 </resources>

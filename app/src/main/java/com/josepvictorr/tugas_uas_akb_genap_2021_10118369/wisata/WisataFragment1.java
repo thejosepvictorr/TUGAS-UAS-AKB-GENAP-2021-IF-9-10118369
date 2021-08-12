@@ -25,7 +25,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 
 public class WisataFragment1 extends Fragment {
-    // 11 Agustus 20201 - 10118369 - Josep Victor Rajaodli - IF 9
+    // 11 Agustus 2021 - 10118369 - Josep Victor Rajadoli - IF 9
     private DatabaseReference reference;
     ArrayList<Wisata1> wisata1List;
     Wisata1Adapter mAdapter;

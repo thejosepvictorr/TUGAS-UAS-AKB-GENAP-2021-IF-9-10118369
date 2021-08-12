@@ -6,12 +6,30 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Wisata3 {
-    // 11 Agustus 20201 - 10118369 - Josep Victor Rajaodli - IF 9
+    // 11 Agustus 2021 - 10118369 - Josep Victor Rajadoli - IF 9
     public String nama_tempat;
     public String alamat_tempat;
     public String biaya_masuk;
     public String gambar_tempat;
+    public Double latitude;
+    public Double longitude;
     public String key;
+
+    public Double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
+    }
+
+    public Double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(Double longitude) {
+        this.longitude = longitude;
+    }
 
     public String getKey() {
         return key;
@@ -57,11 +75,14 @@ public class Wisata3 {
 
     }
 
-    public Wisata3(String nama_tempat, String alamat_tempat, String biaya_masuk, String gambar_tempat){
+    public Wisata3(String nama_tempat, String alamat_tempat, String biaya_masuk, String gambar_tempat,
+                   Double latitude, Double longitude){
         this.nama_tempat = nama_tempat;
         this.alamat_tempat = alamat_tempat;
         this.biaya_masuk = biaya_masuk;
         this.gambar_tempat = gambar_tempat;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
     @Exclude

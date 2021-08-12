@@ -1,6 +1,7 @@
 package com.josepvictorr.tugas_uas_akb_genap_2021_10118369.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,12 +14,14 @@ import com.bumptech.glide.Glide;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.josepvictorr.tugas_uas_akb_genap_2021_10118369.R;
+import com.josepvictorr.tugas_uas_akb_genap_2021_10118369.maps.MapsWisata2Activity;
+import com.josepvictorr.tugas_uas_akb_genap_2021_10118369.maps.MapsWisata3Activity;
 import com.josepvictorr.tugas_uas_akb_genap_2021_10118369.model.Wisata3;
 
 import java.util.ArrayList;
 
 public class Wisata3Adapter extends RecyclerView.Adapter<Wisata3Adapter.ViewHolder> {
-    // 11 Agustus 20201 - 10118369 - Josep Victor Rajaodli - IF 9
+    // 11 Agustus 2021 - 10118369 - Josep Victor Rajadoli - IF 9
     private Context context;
     private ArrayList<Wisata3> wisata3s;
 
@@ -42,6 +45,18 @@ public class Wisata3Adapter extends RecyclerView.Adapter<Wisata3Adapter.ViewHold
         Glide.with(context)
                 .load(wisata3s.get(position).getGambar_tempat())
                 .into(holder.ivPreviewwisata3);
+
+        holder.itemView.setOnClickListener(view -> {
+            Intent detailWisata3 = new Intent(context.getApplicationContext(), MapsWisata3Activity.class);
+            detailWisata3.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            detailWisata3.putExtra("nama_tempat", wisata3s.get(position).getNama_tempat());
+            detailWisata3.putExtra("biaya_masuk", wisata3s.get(position).getBiaya_masuk());
+            detailWisata3.putExtra("alamat_tempat", wisata3s.get(position).getAlamat_tempat());
+            detailWisata3.putExtra("gambar_tempat", wisata3s.get(position).getGambar_tempat());
+            detailWisata3.putExtra("latitude", wisata3s.get(position).getLatitude());
+            detailWisata3.putExtra("longitude", wisata3s.get(position).getLongitude());
+            context.startActivity(detailWisata3);
+        });
     }
 
     @Override

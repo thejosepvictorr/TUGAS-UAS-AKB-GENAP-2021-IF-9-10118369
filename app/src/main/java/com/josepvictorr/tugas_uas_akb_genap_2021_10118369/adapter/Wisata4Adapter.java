@@ -1,6 +1,7 @@
 package com.josepvictorr.tugas_uas_akb_genap_2021_10118369.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,13 +14,15 @@ import com.bumptech.glide.Glide;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.josepvictorr.tugas_uas_akb_genap_2021_10118369.R;
+import com.josepvictorr.tugas_uas_akb_genap_2021_10118369.maps.MapsWisata3Activity;
+import com.josepvictorr.tugas_uas_akb_genap_2021_10118369.maps.MapsWisata4Activity;
 import com.josepvictorr.tugas_uas_akb_genap_2021_10118369.model.Wisata3;
 import com.josepvictorr.tugas_uas_akb_genap_2021_10118369.model.Wisata4;
 
 import java.util.ArrayList;
 
 public class Wisata4Adapter extends RecyclerView.Adapter<Wisata4Adapter.ViewHolder> {
-    // 11 Agustus 20201 - 10118369 - Josep Victor Rajaodli - IF 9
+    // 11 Agustus 2021 - 10118369 - Josep Victor Rajadoli - IF 9
     private Context context;
     private ArrayList<Wisata4> wisata4s;
 
@@ -43,6 +46,18 @@ public class Wisata4Adapter extends RecyclerView.Adapter<Wisata4Adapter.ViewHold
         Glide.with(context)
                 .load(wisata4s.get(position).getGambar_tempat())
                 .into(holder.ivPreviewwisata4);
+
+        holder.itemView.setOnClickListener(view -> {
+            Intent detailWisata4 = new Intent(context.getApplicationContext(), MapsWisata4Activity.class);
+            detailWisata4.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            detailWisata4.putExtra("nama_tempat", wisata4s.get(position).getNama_tempat());
+            detailWisata4.putExtra("biaya_masuk", wisata4s.get(position).getBiaya_masuk());
+            detailWisata4.putExtra("alamat_tempat", wisata4s.get(position).getAlamat_tempat());
+            detailWisata4.putExtra("gambar_tempat", wisata4s.get(position).getGambar_tempat());
+            detailWisata4.putExtra("latitude", wisata4s.get(position).getLatitude());
+            detailWisata4.putExtra("longitude", wisata4s.get(position).getLongitude());
+            context.startActivity(detailWisata4);
+        });
     }
 
     @Override

@@ -8,7 +8,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import java.util.List;
 
 public class InfoFragmentSlideAdapter extends FragmentStatePagerAdapter {
-    // 9 Agustus 20201 - 10118369 - Josep Victor Rajaodli - IF 9
+    // 9 Agustus 2021 - 10118369 - Josep Victor Rajadoli - IF 9
 
     private List<Fragment> fragmentList;
     public InfoFragmentSlideAdapter(@NonNull FragmentManager fm, List<Fragment> fragmentList) {

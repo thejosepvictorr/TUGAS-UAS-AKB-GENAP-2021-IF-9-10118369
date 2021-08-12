@@ -20,7 +20,7 @@ import com.josepvictorr.tugas_uas_akb_genap_2021_10118369.model.Wisata1;
 import java.util.ArrayList;
 
 public class Wisata1Adapter extends RecyclerView.Adapter<Wisata1Adapter.ViewHolder> {
-    // 11 Agustus 20201 - 10118369 - Josep Victor Rajaodli - IF 9
+    // 11 Agustus 2021 - 10118369 - Josep Victor Rajadoli - IF 9
     private Context context;
     private ArrayList<Wisata1> wisata1s;
 
@@ -49,6 +49,9 @@ public class Wisata1Adapter extends RecyclerView.Adapter<Wisata1Adapter.ViewHold
             Intent detailWisata1 = new Intent(context.getApplicationContext(), MapsWisata1Activity.class);
             detailWisata1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             detailWisata1.putExtra("nama_tempat", wisata1s.get(position).getNama_tempat());
+            detailWisata1.putExtra("biaya_masuk", wisata1s.get(position).getBiaya_masuk());
+            detailWisata1.putExtra("alamat_tempat", wisata1s.get(position).getAlamat_tempat());
+            detailWisata1.putExtra("gambar_tempat", wisata1s.get(position).getGambar_tempat());
             detailWisata1.putExtra("latitude", wisata1s.get(position).getLatitude());
             detailWisata1.putExtra("longitude", wisata1s.get(position).getLongitude());
             context.startActivity(detailWisata1);

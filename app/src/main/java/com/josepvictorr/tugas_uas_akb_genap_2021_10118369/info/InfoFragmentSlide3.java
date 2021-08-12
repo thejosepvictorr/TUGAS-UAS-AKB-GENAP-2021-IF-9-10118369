@@ -16,7 +16,7 @@ import com.josepvictorr.tugas_uas_akb_genap_2021_10118369.HomeActivity;
 
 
 public class InfoFragmentSlide3 extends Fragment {
-    // 9 Agustus 20201 - 10118369 - Josep Victor Rajaodli - IF 9
+    // 9 Agustus 2021 - 10118369 - Josep Victor Rajadoli - IF 9
     Button btnGetStarted;
 
     @Nullable

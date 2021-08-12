@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black_bg"
+    android:background="@drawable/bg_fragment_3"
     tools:context=".wisata.WisataFragment1">
     <TextView
         android:id="@+id/tvListKotaBandung"
@@ -11,9 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="15dp"
-        android:text="Daftar Wisata di Kota Bandung"
+        android:layout_marginVertical="15dp"
+        android:text="Daftar Wisata di Kota Bandung \n(Tekan salah satu item untuk melihat detail)"
         android:textColor="@color/white"
         android:textAlignment="center"
         android:textSize="25sp"/>

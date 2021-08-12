@@ -5,21 +5,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/tvMapsWisata2"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/actionBarLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:text="Nama tempat"/>
-    <fragment
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:background="@color/black_bg">
+        <TextView
+            android:id="@+id/tvTitleMaps2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="15dp"
+            android:text="Detail Wisata"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tvMapsWisata2"
-        map:cameraZoom="17"
-        tools:context=".maps.MapsWisata2Activity" />
+        android:layout_below="@id/actionBarLayout">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            map:cameraZoom="17"
+            tools:context=".maps.MapsWisata2Activity" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="20dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/black_bg"
+                map:cardElevation="20dp"
+                map:cardCornerRadius="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="5dp">
 
+                    <ImageView
+                        android:id="@+id/ivDetailMaps2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="20dp" />
+
+                    <TextView
+                        android:id="@+id/tvDetailNamaWisata2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/ivDetailMaps2"
+                        android:text="Nama tempat "
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDetailBiayaMasukWisata2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvDetailNamaWisata2"
+                        android:layout_toRightOf="@id/ivDetailMaps2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="Biaya Masuk"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:id="@+id/tvDetailAlamatTempatWisata2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@id/tvDetailBiayaMasukWisata2"
+                        android:layout_toRightOf="@id/ivDetailMaps2"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:text="Alamat"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </FrameLayout>
 </RelativeLayout>

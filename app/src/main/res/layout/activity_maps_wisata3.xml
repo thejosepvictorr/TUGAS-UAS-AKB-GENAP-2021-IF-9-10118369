@@ -10,9 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black_bg">
-
         <TextView
-            android:id="@+id/tvTitleMaps1"
+            android:id="@+id/tvTitleMaps3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -31,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             map:cameraZoom="17"
-            tools:context=".maps.MapsWisata1Activity" />
+            tools:context=".maps.MapsWisata3Activity" />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,44 +51,44 @@
                     android:layout_marginHorizontal="5dp">
 
                     <ImageView
-                        android:id="@+id/ivDetailMaps1"
+                        android:id="@+id/ivDetailMaps3"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="20dp" />
 
                     <TextView
-                        android:id="@+id/tvDetailNamaWisata1"
+                        android:id="@+id/tvDetailNamaWisata3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="10dp"
-                        android:layout_toRightOf="@id/ivDetailMaps1"
+                        android:layout_toRightOf="@id/ivDetailMaps3"
                         android:text="Nama tempat "
                         android:textColor="@color/white"
                         android:textSize="25sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/tvDetailBiayaMasukWisata1"
+                        android:id="@+id/tvDetailBiayaMasukWisata3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/tvDetailNamaWisata1"
-                        android:layout_toRightOf="@id/ivDetailMaps1"
+                        android:layout_below="@id/tvDetailNamaWisata3"
+                        android:layout_toRightOf="@id/ivDetailMaps3"
                         android:layout_centerHorizontal="true"
                         android:layout_marginLeft="10dp"
                         android:text="Biaya Masuk"
                         android:textColor="@color/white"
                         android:textSize="15sp"/>
                     <TextView
-                        android:id="@+id/tvDetailAlamatTempatWisata1"
+                        android:id="@+id/tvDetailAlamatTempatWisata3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:layout_marginLeft="10dp"
-                        android:layout_below="@id/tvDetailBiayaMasukWisata1"
-                        android:layout_toRightOf="@id/ivDetailMaps1"
+                        android:layout_below="@id/tvDetailBiayaMasukWisata3"
+                        android:layout_toRightOf="@id/ivDetailMaps3"
                         android:textColor="@color/white"
                         android:textSize="15sp"
                         android:text="Alamat"/>
@@ -97,5 +96,4 @@
             </androidx.cardview.widget.CardView>
         </RelativeLayout>
     </FrameLayout>
-
 </RelativeLayout>

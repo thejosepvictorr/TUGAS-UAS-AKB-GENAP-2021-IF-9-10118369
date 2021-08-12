@@ -14,7 +14,7 @@ import com.bumptech.glide.Glide;
 import com.josepvictorr.tugas_uas_akb_genap_2021_10118369.R;
 
 public class ProfileFragment extends Fragment {
-    // 10 Agustus 20201 - 10118369 - Josep Victor Rajaodli - IF 9
+    // 10 Agustus 2021 - 10118369 - Josep Victor Rajadoli - IF 9
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container

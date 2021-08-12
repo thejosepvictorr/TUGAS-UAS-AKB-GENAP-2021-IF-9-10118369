@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Wisata2 {
-    // 11 Agustus 20201 - 10118369 - Josep Victor Rajaodli - IF 9
+    // 11 Agustus 2021 - 10118369 - Josep Victor Rajadoli - IF 9
     public String nama_tempat;
     public String alamat_tempat;
     public String biaya_masuk;

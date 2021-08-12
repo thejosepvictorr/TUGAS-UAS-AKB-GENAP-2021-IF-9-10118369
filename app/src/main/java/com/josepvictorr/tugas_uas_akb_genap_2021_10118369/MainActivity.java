@@ -9,7 +9,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.josepvictorr.tugas_uas_akb_genap_2021_10118369.info.InfoFragment;
 
 public class MainActivity extends AppCompatActivity {
-    // 8 Agustus 20201 - 10118369 - Josep Victor Rajaodli - IF 9
+    // 8 Agustus 2021 - 10118369 - Josep Victor Rajadoli - IF 9
 
     private BottomNavigationView bottomNavigationView;
 

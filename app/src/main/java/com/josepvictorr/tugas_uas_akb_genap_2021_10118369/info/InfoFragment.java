@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class InfoFragment extends Fragment {
-    // 9 Agustus 20201 - 10118369 - Josep Victor Rajaodli - IF 9
+    // 9 Agustus 2021 - 10118369 - Josep Victor Rajadoli - IF 9
     private ViewPager viewPager;
     private PagerAdapter pagerAdapter;
     private MainActivity mainActivity;
